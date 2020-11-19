@@ -6,7 +6,7 @@
 <body>
 	<?php 
 		session_start();
-		include ('logout.php');
+		include ('connection.php');
 		echo "<form method = 'POST'>
 				<input type='submit' name = 'logout' value = 'log out'>
 			 </form>

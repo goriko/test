@@ -28,6 +28,8 @@
                 $_SESSION['info_id'] = $row['info_id'];
                 $_SESSION['user_type'] = $row['user_type']; 
             }
+            
+
 
         }
             if (isset($_SESSION['user_id'])) {
@@ -35,7 +37,10 @@
                         header( 'Location: registration.php');
                 }else if($_SESSION['user_type'] == 'User'){
                         header('Location: home.php');
-                }
+                }else{
+                    echo 'Cannot LOGIN';
+    }
+            }
     ?>
 
 
